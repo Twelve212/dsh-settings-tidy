@@ -1,0 +1,38 @@
+{
+  "name": "dsh-settings-tidy",
+  "version": "0.1.0",
+  "description": "给 DSH 设置页的插件入口做视觉分组：原生设置在前，插件设置收进一个带分隔和标题的区块。纯 CSS，不碰任何业务逻辑。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0 || 0.2.1-rc.1 || 0.2.1-rc.2 || 0.2.1-rc.3",
+      "node": ">=20.18"
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "settings",
+    "ui"
+  ],
+  "license": "MIT"
+}

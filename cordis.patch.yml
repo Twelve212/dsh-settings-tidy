@@ -1,0 +1,7 @@
+# dsh-settings-tidy — bundle patch layer
+#
+# 纯客户端插件：把 DSH 设置页左侧的插件入口做视觉分组。
+# host 侧不做任何事（不注册工具、不读写文件），只负责让客户端 bundle 被加载。
+- insert:
+    - id: settings-tidy
+      name: 'dsh-settings-tidy'
